@@ -22,7 +22,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --build-optimizer",
+    "build:app1": "ng build --prod --build-optimizer --project=app1",
+    "build:app2": "ng build --prod --build-optimizer --project=app2",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
