@@ -11,7 +11,7 @@ const providers = [];
 @NgModule({
   declarations: [AppComponent, View1Component, View2Component, NavComponent],
   imports: [BrowserModule, AppRoutingModule],
-  providers: providers,
+  providers: [providers],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
@@ -21,7 +21,7 @@ export class App2SharedModule {
   static forRoot(): ModuleWithProviders<App2SharedModule> {
     return {
       ngModule: AppModule,
-      providers: providers,
+      providers: [providers],
     };
   }
 }
